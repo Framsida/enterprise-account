@@ -3,7 +3,7 @@ package com.qa.app.Domain;
 import javax.persistence.*;
 
 @Entity
-public class Users {
+public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -14,10 +14,10 @@ public class Users {
     @Column(name = "account_number")
     private String accountNumber;
 
-    public Users() {
+    public Account() {
     }
 
-    public Users(String firstname, String lastName, String accountNumber) {
+    public Account(String firstname, String lastName, String accountNumber) {
         this.firstName = firstname;
         this.lastName = lastName;
         this.accountNumber = accountNumber;
