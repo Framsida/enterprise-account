@@ -23,6 +23,14 @@ public class Account {
         this.accountNumber = accountNumber;
     }
 
+    public Account(Long id, String firstname, String lastName, String accountNumber) {
+        this.id = id;
+        this.firstName = firstname;
+        this.lastName = lastName;
+        this.accountNumber = accountNumber;
+
+    }
+
     public Long getId() {
         return id;
     }
